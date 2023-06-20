@@ -72,7 +72,8 @@ fn redirect() -> Redirect {
     ),
     params(
         ("value" = String, description = "Say hello by value")
-    )
+    ),
+
 )]
 #[get("/hello/<value>")]
 fn hello(value: &RawStr) -> String {

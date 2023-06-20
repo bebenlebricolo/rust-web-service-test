@@ -3,23 +3,6 @@
 version = 3
 
 [[package]]
-name = "RustWebServiceTest"
-version = "0.1.0"
-dependencies = [
- "env_logger",
- "log 0.4.19",
- "okapi",
- "rocket",
- "rocket_contrib",
- "rocket_okapi",
- "schemars",
- "serde",
- "serde_json",
- "utoipa",
- "utoipa-swagger-ui",
-]
-
-[[package]]
 name = "adler"
 version = "1.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1168,6 +1151,23 @@ checksum = "512b0ab6853f7e14e3c8754acb43d6f748bb9ced66aa5915a6553ac8213f7731"
 dependencies = [
  "sha2 0.10.7",
  "walkdir",
+]
+
+[[package]]
+name = "rust-web-service-test"
+version = "0.1.0"
+dependencies = [
+ "env_logger",
+ "log 0.4.19",
+ "okapi",
+ "rocket",
+ "rocket_contrib",
+ "rocket_okapi",
+ "schemars",
+ "serde",
+ "serde_json",
+ "utoipa",
+ "utoipa-swagger-ui",
 ]
 
 [[package]]
