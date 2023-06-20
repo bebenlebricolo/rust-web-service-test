@@ -7,10 +7,14 @@ use rocket::{
     routes, Response, State, response::Redirect,
     uri
 };
-use utoipa::OpenApi;
+
+use utoipa::{OpenApi, openapi};
+use utoipa::openapi::{Info, Paths, Components, OpenApiBuilder};
 use utoipa_swagger_ui::Config;
 
 fn main() {
+
+    // #[derive(Debug)]
     #[derive(OpenApi)]
     #[openapi(paths(hello))]
     struct ApiDoc;
